@@ -49,7 +49,7 @@ const Sponsorship = () => {
             <CardContent>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>• Logo in Telegram mini app</li>
-                <li>• "Sponsored by" mentions</li>
+                <li>• &quot;Sponsored by&quot; mentions</li>
                 <li>• Press coverage inclusion</li>
               </ul>
             </CardContent>

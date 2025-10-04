@@ -14,8 +14,8 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-muted-foreground mb-6 max-w-md">
-              The world's first lossless crypto lottery. Play, win, and never lose your principal. 
-              Powered by DeFi yield and community governance.
+  {"The world's first lossless crypto lottery. Play, win, and never lose your principal. Powered by DeFi yield and community governance."}
+
             </p>
             <div className="flex items-center space-x-4">
               <Button
