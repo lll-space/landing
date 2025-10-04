@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* LLL.SPACE - Lossless Lottery Design System */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    /* Brand Colors - Neon Magenta/Purple Gradient Primary */
+    --background: 10 13% 8%; /* Dark Navy #0A0D14 */
+    --foreground: 0 0% 98%;
+
+    --card: 220 16% 11%; /* Slate Gray #161B22 */
+    --card-foreground: 0 0% 98%;
+
+    --popover: 220 16% 11%;
+    --popover-foreground: 0 0% 98%;
+
+    /* Neon Magenta/Purple Primary Gradient */
+    --primary: 280 100% 35%; /* #B400FF */
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 265 100% 50%; /* #6A00FF */
+
+    /* Neon Yellow Secondary */
+    --secondary: 51 100% 50%; /* #FFD400 */
+    --secondary-foreground: 10 13% 8%;
+
+    /* Aqua/Cyan Accent */
+    --accent: 190 100% 50%; /* #00E6FF */
+    --accent-foreground: 10 13% 8%;
+
+    /* Muted */
+    --muted: 220 20% 20%;
+    --muted-foreground: 190 100% 80%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 20% 25%;
+    --input: 220 20% 20%;
+    --ring: 280 100% 35%;
+
+    --radius: 0.75rem;
+
+    /* Brand Neon Colors */
+    --neon-magenta: 280 100% 35%; /* #B400FF */
+    --neon-purple: 265 100% 50%; /* #6A00FF */
+    --neon-yellow: 51 100% 50%; /* #FFD400 */
+    --neon-cyan: 190 100% 50%; /* #00E6FF */
+    --neon-blue: 220 100% 60%;
+    --neon-orange: 25 100% 60%;
+
+    /* Gradients - Updated for new brand */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--neon-magenta)), hsl(var(--neon-purple)));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--neon-yellow)), hsl(var(--neon-orange)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--neon-cyan)), hsl(var(--neon-blue)));
+    
+    /* Glows - Updated for new brand */
+    --glow-primary: 0 0 20px hsl(var(--neon-magenta) / 0.5);
+    --glow-secondary: 0 0 20px hsl(var(--neon-yellow) / 0.5);
+    --glow-accent: 0 0 20px hsl(var(--neon-cyan) / 0.5);
+    --glow-intense: 0 0 40px hsl(var(--neon-magenta) / 0.8), 0 0 80px hsl(var(--neon-purple) / 0.4);
+
+    /* Transitions */
+    --transition-glow: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .glow-primary {
+    box-shadow: var(--glow-primary);
+  }
+  
+  .glow-secondary {
+    box-shadow: var(--glow-secondary);
+  }
+  
+  .glow-accent {
+    box-shadow: var(--glow-accent);
+  }
+  
+  .glow-intense {
+    box-shadow: var(--glow-intense);
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 10px currentColor;
+  }
+  
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite alternate;
+  }
+  
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-secondary {
+    background: var(--gradient-secondary);
+  }
+  
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+  
+  .font-orbitron {
+    font-family: 'Orbitron', system-ui, sans-serif;
+  }
+  
+  .font-inter {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@keyframes pulse-glow {
+  from {
+    filter: drop-shadow(0 0 5px currentColor);
+  }
+  to {
+    filter: drop-shadow(0 0 20px currentColor) drop-shadow(0 0 30px currentColor);
+  }
+}
