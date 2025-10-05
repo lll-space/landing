@@ -63,14 +63,14 @@ const Community = () => {
 
   return (
     <section className="py-20 px-4 bg-gradient-to-br from-neon-magenta/5 to-neon-yellow/5">
-      
+
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold font-orbitron text-neon-yellow mb-4">
             Join Our Community
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Connect with fellow players, stay updated on the latest developments, 
+            Connect with fellow players, stay updated on the latest developments,
             and be the first to know about the official launch.
           </p>
         </div>
@@ -90,7 +90,7 @@ const Community = () => {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-4 gap-4 mb-6">
+              <div className="grid grid-cols-3 gap-4 mb-6">
                 <div className="text-center">
                   <div className="bg-neon-yellow/20 rounded-lg p-4 border border-neon-yellow/30">
                     <div className="text-2xl font-bold text-neon-yellow font-orbitron">
@@ -115,16 +115,8 @@ const Community = () => {
                     <div className="text-sm text-muted-foreground">Minutes</div>
                   </div>
                 </div>
-                <div className="text-center">
-                  <div className="bg-neon-purple/20 rounded-lg p-4 border border-neon-purple/30">
-                    <div className="text-2xl font-bold text-neon-purple font-orbitron">
-                      {timeLeft.seconds}
-                    </div>
-                    <div className="text-sm text-muted-foreground">Seconds</div>
-                  </div>
-                </div>
               </div>
-              
+
               <div className="flex items-center justify-center gap-2">
                 <Zap className="h-4 w-4 text-neon-yellow" />
                 <Badge variant="secondary" className="bg-neon-yellow/20 text-neon-yellow border-neon-yellow/30">
@@ -132,7 +124,7 @@ const Community = () => {
                 </Badge>
               </div>
 
-                            <div className="mt-6 p-4 bg-neon-cyan/10 border border-neon-cyan/20 rounded-lg">
+              <div className="mt-6 p-4 bg-neon-cyan/10 border border-neon-cyan/20 rounded-lg">
                 <div className="flex items-center gap-2 mb-2">
                   <span className="text-neon-cyan">📮</span>
                   <span className="font-semibold text-neon-cyan">Contact & Press</span>
@@ -140,8 +132,8 @@ const Community = () => {
                 <p className="text-sm text-muted-foreground mb-2">
                   For partnerships, press inquiries, or business development
                 </p>
-                <a 
-                  href="mailto:hello@lll.space" 
+                <a
+                  href="mailto:hello@lll.space"
                   className="text-sm text-neon-cyan hover:underline"
                 >
                   hello@lll.space
@@ -172,9 +164,9 @@ const Community = () => {
                     asChild
                     className="w-full justify-between bg-background/50 border-neon-cyan/30 hover:bg-neon-cyan/10 hover:border-neon-cyan/50 transition-all"
                   >
-                    <a 
-                      href={social.url} 
-                      target="_blank" 
+                    <a
+                      href={social.url}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-between"
                     >
@@ -183,16 +175,16 @@ const Community = () => {
                         <span className="font-semibold">{social.name}</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <Badge variant="secondary" className="text-xs">
+                        {/* <Badge variant="secondary" className="text-xs">
                           {social.followers || social.members}
-                        </Badge>
+                        </Badge> */}
                         <ExternalLink className="h-4 w-4" />
                       </div>
                     </a>
                   </Button>
                 ))}
               </div>
-              
+
 
             </CardContent>
           </Card>

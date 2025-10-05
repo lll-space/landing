@@ -15,6 +15,7 @@ const Header = () => {
     { name: '_LLL_', href: '/' },
     // { name: 'Pools', href: '/pools' },
     // { name: 'Prizes', href: '/prizes' },
+    { name: 'Sponsorship', href: '/sponsorship' },
     { name: 'Token', href: '/token' },
     { name: 'Vision', href: '/roadmap' },
     { name: 'DAO', href: '/dao' },
@@ -28,9 +29,9 @@ const Header = () => {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link href="/" className="flex items-center space-x-2">
-              <img 
-                src="/lovable-uploads/8f13af63-df58-4637-9d54-c7f9ab22e591.png" 
-                alt="LLL.SPACE Logo" 
+              <img
+                src="/lovable-uploads/8f13af63-df58-4637-9d54-c7f9ab22e591.png"
+                alt="LLL.SPACE Logo"
                 className="w-10 h-10"
               />
               <div className="text-2xl font-bold font-orbitron text-glow">
@@ -53,12 +54,12 @@ const Header = () => {
 
             {/* Desktop CTA */}
             <div className="hidden lg:flex items-center space-x-4">
-              <Button 
+              <Button
                 onClick={handleConnectWallet}
                 variant={isConnected ? "outline" : "default"}
                 className={
-                  isConnected 
-                    ? "border-neon-cyan text-neon-cyan hover:bg-neon-cyan hover:text-background" 
+                  isConnected
+                    ? "border-neon-cyan text-neon-cyan hover:bg-neon-cyan hover:text-background"
                     : "gradient-primary text-white glow-primary"
                 }
               >
@@ -100,12 +101,12 @@ const Header = () => {
                   </Link>
                 ))}
                 <div className="flex flex-col space-y-2 pt-4 border-t border-border">
-                  <Button 
+                  <Button
                     onClick={handleConnectWallet}
                     variant={isConnected ? "outline" : "default"}
                     className={
-                      isConnected 
-                        ? "border-neon-cyan text-neon-cyan" 
+                      isConnected
+                        ? "border-neon-cyan text-neon-cyan"
                         : "gradient-primary text-white"
                     }
                   >

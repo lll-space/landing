@@ -1,4 +1,3 @@
-// app/loading.tsx  (Next.js)  یا  components/LllLoading.tsx
 import { useEffect, useMemo, useState } from "react";
 
 export default function LllLoading() {
