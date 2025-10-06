@@ -55,18 +55,16 @@ const Header = () => {
             {/* Desktop CTA */}
             <div className="hidden lg:flex items-center space-x-4">
               <Button
-                onClick={handleConnectWallet}
+                // onClick={handleConnectWallet}
                 variant={isConnected ? "outline" : "default"}
-                className={
-                  isConnected
-                    ? "border-neon-cyan text-neon-cyan hover:bg-neon-cyan hover:text-background"
-                    : "gradient-primary text-white glow-primary"
-                }
+                className={"gradient-primary text-white glow-primary"}
               >
-                <Gamepad className="w-4 h-4 mr-2" />
-                Play LLL Game
-                {/* {isConnected ? 'Connected' : 'Connect Wallet'} */}
+                <a href="http://t.me/lll_space_bot" target="_blank" className="flex items-center">
+                  <Gamepad className="w-4 h-4 mr-2" />
+                  Play LLL Game
+                </a>
               </Button>
+
               {/* <Button asChild variant="outline" className="border-neon-yellow text-neon-yellow hover:bg-neon-yellow hover:text-background">
                 <Link href="/app">
                   <ExternalLink className="w-4 h-4 mr-2" />
@@ -102,22 +100,13 @@ const Header = () => {
                 ))}
                 <div className="flex flex-col space-y-2 pt-4 border-t border-border">
                   <Button
-                    onClick={handleConnectWallet}
-                    variant={isConnected ? "outline" : "default"}
-                    className={
-                      isConnected
-                        ? "border-neon-cyan text-neon-cyan"
-                        : "gradient-primary text-white"
-                    }
+                    variant={"default"}
+                    className={"gradient-primary text-white"}
                   >
-                    <Wallet className="w-4 h-4 mr-2" />
-                    {isConnected ? 'Connected' : 'Connect Wallet'}
-                  </Button>
-                  <Button asChild variant="outline" className="border-neon-yellow text-neon-yellow">
-                    <Link href="/app">
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      Open in Telegram
-                    </Link>
+                    <a href="http://t.me/lll_space_bot" target="_blank" className="flex items-center">
+                      <Gamepad className="w-4 h-4 mr-2" />
+                      Play LLL Game
+                    </a>
                   </Button>
                 </div>
               </nav>

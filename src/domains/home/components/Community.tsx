@@ -55,7 +55,7 @@ const Community = () => {
     },
     {
       name: "Discord",
-      url: "https://discord.gg/lll-lotto",
+      url: "https://discord.gg/EEnNSZZm",
       icon: "💬",
       members: "4.7K"
     }

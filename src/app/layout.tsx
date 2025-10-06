@@ -7,8 +7,11 @@ import { I18nProvider } from '@/core/i18n/provider';
 
 
 export const metadata: Metadata = {
-  title: 'LLL - Lossless Lottery',
-  description: 'Your application description goes here',
+  title: 'LLL – The World’s First Lossless Crypto Lottery on TON',
+  description: 'Play, win, and never lose your principal. LLL is a decentralized, lossless lottery powered by DeFi yields on TON. Stake, earn rewards, and join a fair, transparent, and community-governed gaming revolution.',
+  other: {
+    'apple-mobile-web-app-title': 'LLL',
+  },
 };
 
 export default async function RootLayout({ children }: PropsWithChildren) {

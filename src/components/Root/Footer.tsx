@@ -24,7 +24,7 @@ const Footer = () => {
                 className="text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
                 asChild
               >
-                <a href="https://twitter.com/lll_space" target="_blank" rel="noopener noreferrer">
+                <a href="https://twitter.com/lll_space_en" target="_blank" rel="noopener noreferrer">
                   <Twitter className="w-5 h-5" />
                 </a>
               </Button>
@@ -44,7 +44,7 @@ const Footer = () => {
                 className="text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
                 asChild
               >
-                <a href="https://discord.gg/lll_space" target="_blank" rel="noopener noreferrer">
+                <a href="https://discord.gg/EEnNSZZm" target="_blank" rel="noopener noreferrer">
                   <MessageCircle className="w-5 h-5" />
                 </a>
               </Button>
