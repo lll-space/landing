@@ -23,7 +23,7 @@ export default function Hero() {
       </div>
 
       {/* Revolutionary Header */}
-      <div className="relative z-10 container px-4 text-center">
+      <div className="relative z-10 container px-4 text-center py-8">
         {/* Revolutionary Badge */}
         <div className="inline-flex items-center gap-3 mb-8 px-6 py-3 rounded-full border-2 border-neon-cyan/50 bg-card/20 backdrop-blur-md glow-cyan">
           <div className="w-3 h-3 bg-neon-cyan rounded-full animate-pulse"></div>
