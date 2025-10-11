@@ -133,10 +133,10 @@ const Community = () => {
                   For partnerships, press inquiries, or business development
                 </p>
                 <a
-                  href="mailto:hello@lll.space"
+                  href="mailto:info@lll.space"
                   className="text-sm text-neon-cyan hover:underline"
                 >
-                  hello@lll.space
+                  info@lll.space
                 </a>
               </div>
             </CardContent>

@@ -332,7 +332,7 @@ export default function SponsorshipPage() {
             <Badge variant="outline" className="mb-3 border-neon-yellow text-neon-yellow">Get in Touch</Badge>
             <h3 className="text-3xl font-bold font-orbitron mb-2">Start your sponsorship</h3>
             <p className="text-muted-foreground mb-6">Fill the form and our partnerships team will reply within 24–48h.
-              Or email <span className="text-neon-cyan">partners@lll.space</span>.</p>
+              Or email <span className="text-neon-cyan">info@lll.space</span>.</p>
 
             <div className="space-y-4 text-sm text-muted-foreground">
               <p className="flex items-center gap-2"><Building2 className="h-4 w-4 text-neon-cyan"/> Tailored packages for exchanges, L1/L2s, wallets, protocols, media.</p>
@@ -410,7 +410,7 @@ function ContactForm() {
       setSubmitted(true);
     } catch (e) {
       console.error(e);
-      alert("Something went wrong. Please try again or email partners@lll.space");
+      alert("Something went wrong. Please try again or email info@lll.space");
     } finally {
       setLoading(false);
     }
