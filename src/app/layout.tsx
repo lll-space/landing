@@ -5,6 +5,7 @@ import { getLocale } from 'next-intl/server';
 import { Root } from '@/components/Root/Root';
 import { I18nProvider } from '@/core/i18n/provider';
 
+import { GoogleTagManager } from '@next/third-parties/google'
 
 export const metadata: Metadata = {
   title: 'LLL – The World’s First Lossless Crypto Lottery on TON',
@@ -18,6 +19,7 @@ export default async function RootLayout({ children }: PropsWithChildren) {
   const locale = await getLocale();
   return (
     <html lang={locale} suppressHydrationWarning>
+      <GoogleTagManager gtmId="GTM-TJB853G6" />
       <body>
         <I18nProvider>
           <Root>{children}</Root>
