@@ -24,7 +24,7 @@ export default async function RootLayout({ children }: PropsWithChildren) {
           <Root>{children}</Root>
         </I18nProvider>
       </body>
-                    <GoogleAnalytics gaId="G-RLQZKL8E36" />
+      <GoogleAnalytics gaId="G-RLQZKL8E36" />
     </html>
   );
 }

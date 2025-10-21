@@ -10,18 +10,22 @@ import './index.css';
 import Header from './Header';
 import Footer from './Footer';
 import LllLoading from './Loading';
+import { ProgressProvider } from '@bprogress/next/app';
 
 
 function RootInner({ children }: PropsWithChildren) {
 
   return (
-    <>
-          <Header />
-
+    <ProgressProvider
+      height="2px"
+      color="#fffd00"
+      options={{ showSpinner: false }}
+      shallowRouting
+    >
+      <Header />
       {children}
-            <Footer />
-
-    </>
+      <Footer />
+    </ProgressProvider>
   );
 }
 
@@ -36,6 +40,6 @@ export function Root(props: PropsWithChildren) {
       <RootInner {...props} />
     </ErrorBoundary>
   ) : (
-    <LllLoading/>
+    <LllLoading />
   );
 }
