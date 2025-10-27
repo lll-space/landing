@@ -10,10 +10,10 @@ export default function Hero() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_80%,hsl(var(--neon-pink))_0%,transparent_60%)] opacity-30 animate-pulse" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,hsl(var(--neon-cyan))_0%,transparent_60%)] opacity-30 animate-pulse" style={{ animationDelay: '1s' }} />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,hsl(var(--neon-yellow))_0%,transparent_70%)] opacity-20 animate-pulse" style={{ animationDelay: '2s' }} />
-        
+
         {/* Crypto grid pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(180,0,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(180,0,255,0.03)_1px,transparent_1px)] bg-[size:50px_50px]" />
-        
+
         {/* Floating crypto elements */}
         <div className="absolute top-20 left-10 w-8 h-8 border-2 border-neon-cyan/30 rotate-45 animate-spin" style={{ animationDuration: '10s' }} />
         <div className="absolute top-40 right-20 w-6 h-6 border-2 border-neon-yellow/40 rounded-full animate-pulse" />
@@ -41,12 +41,12 @@ export default function Hero() {
               <div className="w-16 h-16 bg-gradient-to-br from-neon-cyan to-neon-pink rounded-xl flex items-center justify-center text-white text-2xl font-bold shadow-lg animate-pulse" style={{ animationDelay: '0.6s' }}>L</div>
             </div>
           </div>
-          
+
           <div className="text-3xl md:text-4xl font-bold mb-6 text-white">
             <span className="bg-gradient-to-r from-neon-cyan to-neon-yellow bg-clip-text text-transparent">PLAY. WIN.</span>{" "}
             <span className="text-neon-pink glow-pink">NEVER LOSE.</span>
           </div>
-          
+
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             The first <span className="text-neon-yellow font-bold">LOSSLESS LOTTERY</span> on TON blockchain.
             <br />
@@ -56,22 +56,27 @@ export default function Hero() {
 
         {/* Revolutionary CTAs */}
         <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
-          <Button 
-            variant="default" 
-            size="lg" 
-            className="group bg-gradient-to-r from-neon-yellow to-neon-orange text-black font-bold px-12 py-6 text-xl rounded-2xl glow-yellow hover:glow-intense transition-all duration-500 hover:scale-105"
-          >
-            <span className="mr-3 text-2xl group-hover:animate-spin">🚀</span>
-            Play & Earn LLL
-          </Button>
-          <Button 
-            variant="outline" 
-            size="lg"
-            className="group border-2 border-neon-cyan text-neon-cyan hover:bg-neon-cyan hover:text-black px-12 py-6 text-xl rounded-2xl glow-cyan transition-all duration-500 hover:scale-105"
-          >
-            <span className="mr-3 text-2xl group-hover:animate-bounce">💎</span>
-            Buy on STON.fi
-          </Button>
+          <a href="https://go.lll.space/play" target="_blank">
+            <Button
+              variant="default"
+              size="lg"
+              className="group bg-gradient-to-r from-neon-yellow to-neon-orange text-black font-bold px-12 py-6 text-xl rounded-2xl glow-yellow hover:glow-intense transition-all duration-500 hover:scale-105"
+            >
+              <span className="mr-3 text-2xl group-hover:animate-spin">🚀</span>
+              Play & Earn LLL
+            </Button>
+          </a>
+          <a href="https://go.lll.space/stonfi" target="_blank">
+
+            <Button
+              variant="outline"
+              size="lg"
+              className="group border-2 border-neon-cyan text-neon-cyan hover:bg-neon-cyan hover:text-black px-12 py-6 text-xl rounded-2xl glow-cyan transition-all duration-500 hover:scale-105"
+            >
+              <span className="mr-3 text-2xl group-hover:animate-bounce">💎</span>
+              Buy on STON.fi
+            </Button>
+          </a>
         </div>
 
         {/* Revolutionary Stats Grid */}
@@ -83,7 +88,7 @@ export default function Hero() {
               <div className="w-4/5 h-full bg-gradient-to-r from-neon-yellow to-neon-orange rounded-full"></div>
             </div>
           </div>
-          
+
           <div className="bg-gradient-to-br from-neon-cyan/10 to-neon-pink/10 backdrop-blur-md border-2 border-neon-cyan/30 rounded-2xl p-6 glow-cyan group hover:scale-105 transition-all duration-300">
             <div className="text-4xl font-orbitron font-black text-neon-cyan mb-2">2M LLL</div>
             <div className="text-muted-foreground font-semibold">AIRDROP POOL</div>
@@ -91,7 +96,7 @@ export default function Hero() {
               <div className="w-3/5 h-full bg-gradient-to-r from-neon-cyan to-neon-pink rounded-full"></div>
             </div>
           </div>
-          
+
           <div className="bg-gradient-to-br from-neon-pink/10 to-neon-yellow/10 backdrop-blur-md border-2 border-neon-pink/30 rounded-2xl p-6 glow-pink group hover:scale-105 transition-all duration-300">
             <div className="text-4xl font-orbitron font-black text-neon-pink mb-2">100%</div>
             <div className="text-muted-foreground font-semibold">PRINCIPAL SAFE</div>
@@ -99,7 +104,7 @@ export default function Hero() {
               <div className="w-full h-full bg-gradient-to-r from-neon-pink to-neon-yellow rounded-full"></div>
             </div>
           </div>
-          
+
           <div className="bg-gradient-to-br from-neon-orange/10 to-neon-cyan/10 backdrop-blur-md border-2 border-neon-orange/30 rounded-2xl p-6 glow-orange group hover:scale-105 transition-all duration-300">
             <div className="text-4xl font-orbitron font-black text-neon-orange mb-2">100%</div>
             <div className="text-muted-foreground font-semibold">GOVERNED DAO</div>

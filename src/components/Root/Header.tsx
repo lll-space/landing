@@ -59,7 +59,7 @@ const Header = () => {
                 variant={isConnected ? "outline" : "default"}
                 className={"gradient-primary text-white glow-primary"}
               >
-                <a href="http://t.me/lll_space_bot" target="_blank" className="flex items-center">
+                <a href="https://go.lll.space/play" target="_blank" className="flex items-center">
                   <Gamepad className="w-4 h-4 mr-2" />
                   Play LLL Game
                 </a>
@@ -103,7 +103,7 @@ const Header = () => {
                     variant={"default"}
                     className={"gradient-primary text-white"}
                   >
-                    <a href="http://t.me/lll_space_bot" target="_blank" className="flex items-center">
+                    <a href="https://go.lll.space/play" target="_blank" className="flex items-center">
                       <Gamepad className="w-4 h-4 mr-2" />
                       Play LLL Game
                     </a>
